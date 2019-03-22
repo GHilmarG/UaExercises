@@ -4,7 +4,7 @@ function [UserVar,as,ab]=DefineMassBalance(UserVar,CtrlVar,MUA,time,s,b,h,S,B,rh
 %  as   is the upper surface (local) mass balance in the units m/a
 %  ab   is the lower surface (local) mass balance in the units m/a
 
-% I create a surface mass balance profile which is a linear function of horizontla distance
+% I create a surface mass balance profile which is a linear function of horizontal distance
 %
 
 %  a=a0+a1*x  => a0*l0+0.5*a1*l0^2=0  ->  l0=-2*a0/a1

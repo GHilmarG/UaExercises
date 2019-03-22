@@ -5,7 +5,9 @@ function [UserVar,CtrlVar,MeshBoundaryCoordinates]=Ua2D_InitialUserInput(UserVar
 
 CtrlVar.TimeDependentRun=1; 
 CtrlVar.Experiment='FlowLineMountain';
-CtrlVar.Restart=1;   
+
+CtrlVar.Restart=0;   
+CtrlVar.WriteRestartFile=1;
 
 CtrlVar.time=0 ; 
 CtrlVar.dt=1; 
@@ -16,8 +18,8 @@ CtrlVar.TotalTime=2000;
 CtrlVar.AdaptiveTimeStepping=1 ; CtrlVar.ATStimeStepTarget=1.0  ;
 
 
-CtrlVar.WriteRestartFile=1;
-
+% Flow approximatoin.
+% SSHEET is what in the litterature is often referred to as SIA
 CtrlVar.FlowApproximation='SSHEET';
 
 % set mininum allowed ice thickness
