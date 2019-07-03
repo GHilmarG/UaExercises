@@ -11,7 +11,7 @@ CtrlVar.WriteRestartFile=1;
 
 CtrlVar.time=0 ; 
 CtrlVar.dt=1; 
-CtrlVar.TotalNumberOfForwardRunSteps=50;  
+CtrlVar.TotalNumberOfForwardRunSteps=500;  
 CtrlVar.TotalTime=2000;
 
 % automated time stepping
@@ -24,12 +24,12 @@ CtrlVar.FlowApproximation='SSHEET';
 
 % set mininum allowed ice thickness
 CtrlVar.ThickMin=1;                
-CtrlVar.ResetThicknessToMinThickness=1;  
-CtrlVar.ThicknessConstraints=0;  
+CtrlVar.ResetThicknessToMinThickness=0;  
+CtrlVar.ThicknessConstraints=1;  
 %% Mesh domain and resolution 
 xd=70e3; xu=-70e3 ; yl=1e3 ; yr=-1e3;
 MeshBoundaryCoordinates=[xu yr ; xd yr ; xd yl ; xu yl];
-CtrlVar.MeshSize=1e3;
+CtrlVar.MeshSize=1000;
 
 
 end

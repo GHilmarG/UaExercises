@@ -4,7 +4,7 @@ function [UserVar,rho,rhow,g]=DefineDensities(UserVar,CtrlVar,MUA,time,s,b,h,S,B
 % rhow      ocean density
 %    g      gravitational acceleration  
 %
-    rho=900+zeros(MUA.Nnodes,1) ; 
+    rho=900; 
     rhow=1030; 
     g=9.81/1000;
     

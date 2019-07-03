@@ -16,6 +16,9 @@ x=MUA.coordinates(:,1) ;
 l0=50e3;
 a0=5 ;
 a1=-2*a0/l0;
+
+
+
 as=a0+a1*abs(x);
 
 ab=x*0 ;
