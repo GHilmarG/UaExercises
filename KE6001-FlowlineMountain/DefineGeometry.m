@@ -2,14 +2,14 @@
 function [UserVar,s,b,S,B,alpha]=DefineGeometry(UserVar,CtrlVar,MUA,time,FieldsToBeDefined)
 
 % B         is bedrock
-% s and b   are upper and lower ice surface
+% s and b   are upper and lower ice surfaces
 % S         is ocean surface
 % alpha     is the tilt of the z axis of the coordinate system with respect to vertical
 
 
 x=MUA.coordinates(:,1); % these are the x coordinates of the nodes
 
-alpha=0.0; %  tilt of the coordinate system
+alpha=0.0; %  tilt of the coordinate system, do not change.
 
 %  Define the bedrock elevation within the computational domain
 BedSlope=0.05;

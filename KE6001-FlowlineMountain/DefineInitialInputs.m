@@ -12,15 +12,15 @@ CtrlVar.WriteRestartFile=1;
 CtrlVar.time=0 ; 
 CtrlVar.dt=1; 
 CtrlVar.TotalNumberOfForwardRunSteps=500;  
-CtrlVar.TotalTime=2000;
+CtrlVar.TotalTime=500;
 
 % automated time stepping
-CtrlVar.AdaptiveTimeStepping=1 ; CtrlVar.ATStimeStepTarget=1.0  ;
+CtrlVar.AdaptiveTimeStepping=1 ; CtrlVar.ATSdtMax=1; 
 
 
-% Flow approximatoin.
+% Flow approximation.
 % SSHEET is what in the litterature is often referred to as SIA
-CtrlVar.FlowApproximation='SSHEET';
+ CtrlVar.FlowApproximation='SSHEET';  CtrlVar.NLtol=1e-15 ; % 
 
 % set mininum allowed ice thickness
 CtrlVar.ThickMin=1;                
